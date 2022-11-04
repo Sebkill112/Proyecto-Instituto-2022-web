@@ -1,3 +1,9 @@
+<%
+	if(request.getSession().getAttribute("listaMenus")==null)
+		response.sendRedirect("Index.jsp?MENSAJE=Iniciar login");
+%>
+
+<jsp:include page="Principal.jsp" />
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>    
     

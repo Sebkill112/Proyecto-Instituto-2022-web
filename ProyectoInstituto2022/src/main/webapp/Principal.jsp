@@ -1,3 +1,8 @@
+<%
+	if(request.getSession().getAttribute("listaMenus")==null)
+		response.sendRedirect("Index.jsp?MENSAJE=Iniciar login");
+%>
+
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>

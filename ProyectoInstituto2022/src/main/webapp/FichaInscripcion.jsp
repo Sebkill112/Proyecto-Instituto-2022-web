@@ -1,3 +1,9 @@
+<%
+	if(request.getSession().getAttribute("listaMenus")==null)
+		response.sendRedirect("Index.jsp?MENSAJE=Iniciar login");
+%>
+
+<jsp:include page="Principal.jsp" />
 
 <!-- trabajar con la libreria core de jstl -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>

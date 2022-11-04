@@ -29,7 +29,7 @@
 					</div>
 					<div class="form-group">
 					<label>Contraseña</label>
-					<input type="text" name="txtPass" class="form-control">
+					<input type="password" name="txtPass" class="form-control">
 					</div>
 					<input type="submit" value="Ingresar" class="btn btn-primary btn-block mt-2">
 					

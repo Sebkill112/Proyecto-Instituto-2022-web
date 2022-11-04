@@ -1,8 +1,10 @@
 package net.proyecto.fabrica;
 
+import net.proyecto.dao.MySqlAlumnoDAO;
 import net.proyecto.dao.MySqlCarreraDao;
 import net.proyecto.dao.MySqlInscripcionDAO;
 import net.proyecto.dao.MySqlUsuarioDAO;
+import net.proyecto.interfaces.AlumnoDAO;
 import net.proyecto.interfaces.CarreraDAO;
 import net.proyecto.interfaces.InscripcionDAO;
 import net.proyecto.interfaces.UsuarioDAO;
@@ -26,5 +28,12 @@ public class MySqlDAOFactory extends DAOFactory {
 		// TODO Auto-generated method stub
 		return new MySqlInscripcionDAO();
 	}
+	
+	@Override
+	public AlumnoDAO getAlumnoDAO() {
+		// TODO Auto-generated method stub
+		return new MySqlAlumnoDAO();
+	}
+
 
 }
