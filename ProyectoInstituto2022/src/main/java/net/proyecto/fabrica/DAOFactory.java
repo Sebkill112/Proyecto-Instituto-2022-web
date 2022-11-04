@@ -1,5 +1,7 @@
 package net.proyecto.fabrica;
 
+import net.proyecto.interfaces.CarreraDAO;
+import net.proyecto.interfaces.InscripcionDAO;
 import net.proyecto.interfaces.UsuarioDAO;
 
 public abstract class DAOFactory {
@@ -13,6 +15,8 @@ public abstract class DAOFactory {
     // Ejemplo:
     //public abstract ArticuloDAO getArticuloDAO();
     public abstract UsuarioDAO getUsuarioDAO();
+    public abstract CarreraDAO getCarreraDAO();
+    public abstract InscripcionDAO getInscripcionDAO();
     // registramos nuestros daos
 
    
